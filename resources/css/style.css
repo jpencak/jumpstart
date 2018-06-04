@@ -8,15 +8,10 @@ body {
   line-height: 1.4;
 }
 
-h2 {
-  font-size: 1.7rem;
-  font-weight: bold;
-  color: #399bd1;
-}
-
 h3 {
   font-size: 1.3rem;
   font-weight: bold;
+  width: 240;
 }
 
 img {
@@ -78,10 +73,7 @@ img {
 .navbar {
   font-size: 1.1rem;
   font-weight: 600;
-  position: relative;
-  min-height: 50px;
-  margin-bottom: 20px;
-  border: 1px solid transparent;
+
 }
 
 .container-fluid {
@@ -104,6 +96,15 @@ img {
 ol, ul {
   margin-top: 0;
   margin-bottom: 10px;
+  list-style: none;
+}
+
+li {
+margin-left: -40px;
+}
+
+ul.nav.navbar-nav a {
+  padding-right: 55px;
 }
 
 .nav > li {
@@ -139,7 +140,7 @@ ol, ul {
   line-height: 20px;
 }
 
-.nav > li > a {
+.nav > li >a {
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -159,7 +160,7 @@ a {
   color: #777;
 }
 
-.container-fluid > .navbar-collapse .container-fluid > .navbar-header .container > .navbar-collapse .container > .navbar-header {
+.container-fluid > .navbar-collapse .container-fluid > .navbar-header.container > .navbar-collapse .container > .navbar-header {
   margin-right: 15px;
   margin-left: 15px;
 }
@@ -233,15 +234,7 @@ a {
 .jumbotron h1 {
   font-family: "Monoton", sans-serif;
   font-size: 7.1rem;
-}
-
-.h1, h1 {
-  font-size: 36px;
-}
-
-h1 {
-  margin: .67em 0;
-  font-size: 2em;
+  color: white;
 }
 
 .jumbotron p {
@@ -250,6 +243,7 @@ h1 {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
+  color: white;
 }
 
 .relative-wrapper {
@@ -279,24 +273,10 @@ p {
   width: 100%;
 }
 
-.h2, h2 {
-  font-size: 30px;
-}
-
-.h1, .h2, .h3, h1, h2, h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2 , h3, h4, h5, h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-
-.h3, h3 {
-  font-size: 24px;
+h2.col-xs-12 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #399bd1;
 }
 
 .btn-group-lg > .btn, .btn-lg {
@@ -304,24 +284,6 @@ p {
   font-size: 18px;
   line-height: 1.33333333;
   border-radius: 6px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
 }
 
 .image-container {
@@ -347,6 +309,14 @@ p {
 .featured-project .image-container {
   height: 19rem;
   margin-top: 20px;
+}
+
+.col-xs-6.col-md-3 p {
+  width: 230px;
+}
+
+.col-xs-6.col-md-3.categories {
+  padding-left: 30px;
 }
 
 .categories h3 {
