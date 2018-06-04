@@ -23,7 +23,12 @@ img {
   width: 100%;
 }
 
-.navbar-default .navbar-nav >.active >a,.navbar-default .navbar-nav > .active >a:hover {
+.navbar-default .navbar-nav > .active > a {
+  color: #399bd1;
+  background-color: inherit;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
   color: #399bd1;
   background-color: inherit;
 }
@@ -52,14 +57,10 @@ img {
   outline: none;
 }
 
-
-
-
-
-
 .navbar-default {
   background-color: #f8f8f8;
   border-color: #e7e7e7;
+  position: fixed;
 }
 
 .navbar-fixed-top {
@@ -105,7 +106,7 @@ ol, ul {
   margin-bottom: 10px;
 }
 
-.nav>li {
+.nav > li {
   position: relative;
   display: block;
 }
@@ -123,26 +124,22 @@ ol, ul {
   list-style-position: outside;
   list-style-type: none;
   margin: 0px;
-
   position: relative;
   text-align: left;
   text-decoration-style: solid;
-
 }
 
-
-
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
   color: #777;
 }
 
-.navbar-nav>li>a {
+.navbar-nav > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
 }
 
-.nav>li>a {
+.nav > li > a {
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -162,12 +159,12 @@ a {
   color: #777;
 }
 
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+.container-fluid > .navbar-collapse .container-fluid > .navbar-header .container > .navbar-collapse .container > .navbar-header {
   margin-right: 15px;
   margin-left: 15px;
 }
 
-.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+.navbar-fixed-bottom .navbar-collapse .navbar-fixed-top .navbar-collapse {
   max-height: 340px;
 }
 
@@ -191,8 +188,6 @@ a {
   display: none;
 }
 
-
-
 .carousel {
   position: relative;
 }
@@ -213,21 +208,20 @@ a {
 }
 
 .background-bike {
-  background-image: url("resources/images/jumbotron-bike.jpg");
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-8/Jumpstart/resources/images/jumbotron-bike.jpg");
 }
 
 .background-beer {
-  background-image: url("resources/images/jumbotron-beer.jpg");
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-8/Jumpstart/resources/images/jumbotron-beer.jpg");
 }
 
 .background-flowers {
-  background-image: url("resources/images/jumbotron-flowers.jpg");
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-8/Jumpstart/resources/images/jumbotron-flowers.jpg");
 }
 
 .background-duffel {
-  background-image: url("resources/images/jumbotron-duffel.jpg");
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-8/Jumpstart/resources/images/jumbotron-duffel.jpg");
 }
-
 
 .container-fluid {
   padding-right: 15px;
@@ -244,8 +238,6 @@ a {
 .h1, h1 {
   font-size: 36px;
 }
-
-
 
 h1 {
   margin: .67em 0;
@@ -287,8 +279,6 @@ p {
   width: 100%;
 }
 
-
-
 .h2, h2 {
   font-size: 30px;
 }
@@ -305,23 +295,16 @@ p {
   color: inherit;
 }
 
-
-
 .h3, h3 {
   font-size: 24px;
 }
 
-.btn-group-lg>.btn, .btn-lg {
+.btn-group-lg > .btn, .btn-lg {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33333333;
   border-radius: 6px;
 }
-
-
-}
-
-
 
 .btn {
   display: inline-block;
@@ -341,15 +324,12 @@ p {
   border-radius: 4px;
 }
 
-
-
 .image-container {
   overflow: hidden;
 }
 
 .image-container img {
   opacity: 0.7;
-  transition: transform .5s, opacity .5s;
   transition: transform .5s, opacity .5s;
 }
 
@@ -404,8 +384,6 @@ p {
   margin: auto;
 }
 
-
-
 @media (min-width: 768px) {
 .navbar-fixed-bottom, .navbar-fixed-top {
   border-radius: 0;
@@ -417,17 +395,21 @@ p {
     float: left;
     margin: 0;
 }
-.navbar-nav>li {
+.navbar-nav > li {
     float: left;
 }
-.navbar-nav>li>a {
+.navbar-nav > li > a {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+
+.navbar, .navbar-default, .navbar-fixed-top {
+  margin: 0;
+}
+.navbar>.container .navbar-brand, .navbar > .container-fluid .navbar-brand {
   margin-left: -15px;
 }
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+.container-fluid > .navbar-collapse, .container-fluid > .navbar-header, .container > .navbar-collapse, .container > .navbar-header {
   margin-right: 0;
   margin-left: 0;
 }
